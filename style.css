@@ -35,6 +35,13 @@ nav ul li {
     	margin-right: 10px;
     }
 	
+
+    nav ul li a.lingua {
+	border: 1px solid blue;
+	margin-right: 0px;
+	margin-left: 100px;
+	}
+
 	nav ul li a:hover {
 		filter: brightness(80%) saturate(200%);
 	}

@@ -33,9 +33,14 @@
 	
     /* Global styles */
     body {
+      display: flex;
       font-family: Arial, sans-serif;
       background-color: #e4f0f5;
       color: black;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      justify-content: center;
+      flex-direction: column;
     }
     
     /* Header styles */
@@ -112,19 +117,17 @@
 /* Highlighted section styles */
     .highlight {
 	  height: max(120px, 20vh); /* set container height to 20% of viewport height */
-      display: flex; /* use flexbox layout */
+	  display: flex; /* use flexbox layout */
 	  flex-direction: column; /* stack the boxes vertically */
 	  justify-content: center; /* distribute the boxes evenly */
-      background-color: #99BBEE;
-      color: black;
-      padding: 20px;
-      text-align: center;
-      margin-top: 20px;
-	  margin: 40px;
-      font-size: min(5vw,30px);
-      cursor: pointer;
-	  
-    }
+	  background-color: #99BBEE;
+	  color: black;
+	  padding: 20px;
+	  text-align: center;
+	  margin-top: 20px;
+	  font-size: min(5vw,30px);
+	  cursor: pointer;
+	  }
     
 	.hover-div:hover {
 		background-color: #6C8EBF;
@@ -132,4 +135,5 @@
 	
 	#primo {
 		cursor: default;
+		max-width: 70%;
 	}

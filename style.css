@@ -1,0 +1,111 @@
+
+    /* Navigation bar styles */
+    
+	nav {
+		align-items: center;
+	}
+	
+	nav ul {
+		display: flex;
+		list-style: none;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+		nav ul li {
+        display: inline-block;
+		border-left: 3px solid #e4f0f5;
+    }
+    nav ul li a {
+		background-color: #99BBEE;
+		display:block;
+        color: #e4f0f5;
+        text-decoration: none;
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 30px;
+    }
+	
+	nav ul li a:hover {
+		filter: brightness(80%) saturate(200%);
+	}
+	
+	
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e4f0f5;
+      color: black;
+    }
+    
+    /* Header styles */
+    header {
+      color: black;
+      text-align: center;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+	  text-align: left;
+	  white-space: nowrap;
+    }
+    
+    header p {
+      margin: 0;
+      font-size: 18px;
+    }
+	
+	
+      
+      /* Styles for the grid container and images */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+        grid-gap: 10px;
+		max-width: 900px;
+      }
+      .grid-item {
+        /*border: 1px solid #ddd;*/
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .grid-item img {
+        max-width: 100%;
+        height: auto;
+		 vertical-align: bottom;
+      }
+      .grid-item h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+		flex: 1;
+		font-size: inherit;
+		white-space: nowrap;
+      }
+	  .grid-item:hover {
+		background-color: #6C8EBF;
+	  }
+	  
+      /* Styles for the expandable sections */
+      .expandable-section {
+        display: none;
+        padding: 10px;
+		background-color: #99BBEE;
+        border: 1px solid black;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+      }
+      .expandable-section.show {
+        display: block;
+      }
+	  summary {
+		font-size: 26px;
+		cursor: pointer;
+		font-weight: bold;
+		text-align: center;
+		background-color: #99BBEE;
+		color: #e4f0f5; 
+		}
+		

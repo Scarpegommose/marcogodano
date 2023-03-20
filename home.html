@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Godano</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+    <script>
+  </script>
+  <style>
+    
+    /* Highlighted section styles */
+    .highlight {
+	  height: max(120px, 20vh); /* set container height to 20% of viewport height */
+      display: flex; /* use flexbox layout */
+	  flex-direction: column; /* stack the boxes vertically */
+	  justify-content: center; /* distribute the boxes evenly */
+      background-color: #99BBEE;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+	  margin: 40px;
+      font-size: min(5vw,30px);
+      cursor: pointer;
+	  
+    }
+    
+	.hover-div:hover {
+		background-color: #6C8EBF;
+	}
+	
+	#primo {
+		cursor: default;
+	}
+  </style>
+  
+</head>
+<body>
+  <header>
+	<nav>
+		<ul>
+		  <li><a href="/portfolio.html">Portfolio</a></li>
+		  <li><a href="/contacts.html">Contacts</a></li>
+		  <li><a href="/homejp.html" style="background-color: #b3cf99;">日本語</a></li>
+		</ul>
+	</nav>
+  </header>
+  
+  <div class="highlight" id="primo" style="background-color: transparent; border: 10px solid #99BBEE;">
+	Marco Godano<br>
+	<p style="font-size: min(10vw,20px);">Freelance Translator<br>
+	Japanese, English, Italian<br>
+	mazzi e cazzi</p>
+  </div>
+  <div class="highlight hover-div" onclick="location.href='/portfolio.html';" style="color: #e4f0f5; height: max(80px, 10vh); 
+	  text-decoration: underline;">
+    See my portfolio
+  </div>
+  
+  <div class="highlight hover-div" onclick="location.href='/contacts.html';" style="color: #e4f0f5; height: max(80px, 10vh); 
+	  text-decoration: underline;">
+    Contact me
+  </div>
+ 
+</body>
+</html>

@@ -137,17 +137,19 @@
         line-height: 1.5;
         text-align: center;
       }
+
       .expandable-section.show {
         display: block;
       }
-	  summary {
+
+	summary {
 		font-size: 26px;
 		cursor: pointer;
 		font-weight: bold;
 		text-align: center;
 		background-color: white;
 		color: #6699cc;
-		}
+	}
 
 /* Highlighted section styles */
     .highlight {

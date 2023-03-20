@@ -38,8 +38,8 @@ nav ul li {
 
     nav ul li a.lingua {
 	border: 1px solid blue;
-	margin-right: 0px;
-	margin-left: 100px;
+	margin-right: 2px;
+	margin-left: 50px;
 	}
 
 	nav ul li a:hover {

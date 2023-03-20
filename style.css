@@ -5,41 +5,59 @@
 	
 	nav ul {
 	    width: 100%;
-	    background-color: #e4f0f5;
+	    background-color: #6699cc;
 	    position: fixed;
 	    display: flex;
 	    list-style: none;
 	    top: 0;
 	    right: 0;
+		justify-content: space-between;
 	    flex-direction: row;
 	    align-items: center;
-	    justify-content: center;
 	    margin-top: 0;
+		border-bottom: 2px solid white;
 	}
 
-nav ul li {
-	display: inline-block;
-	border-left: 3px solid #e4f0f5;
-	padding-top: 10px;
-	padding-bottom: 10px;
-    	}
+	nav ul li {
+		color: white;
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 0.89em;
+		margin-left: 5px;
+		height: 30px;
+    }
+
+	nav ul li:first-child
+	{
+		font-weight: bold;
+		flex-grow: 1;
+		margin-left: 0px;
+		text-align: left;
+		font-size: 70px;
+		line-height:30px;
+	}
+
+	nav ul li:first-child a {
+		line-height: 30px;
+	}
+	nav ul li:not(:first-child){
+		flex-shrink: 0;
+		flex-basis: auto;
+	}
+
     nav ul li a {
-	background-color: #99BBEE;
-	display:block;
-	color: #e4f0f5;
-	text-decoration: none;
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 30px;
-   	margin-left: 10px;
-    	margin-right: 10px;
+		display:block;
+		color: #e4f0f5;
+		text-decoration: none;
+		padding-left: 5px;
+		padding-right: 5px;
+		line-height: 30px;
     }
 	
 
     nav ul li a.lingua {
-	border: 1px solid blue;
-	margin-right: 2px;
-	margin-left: 30px;
+		margin-right: 10px;
 	}
 
 	nav ul li a:hover {
@@ -51,7 +69,7 @@ nav ul li {
     body {
       display: flex;
       font-family: Arial, sans-serif;
-      background-color: #e4f0f5;
+      background-color: #6699cc;
       color: black;
       margin-left: 0 !important;
       margin-right: 0 !important;
@@ -68,14 +86,13 @@ nav ul li {
     
     header h1 {
       margin: 0;
-      font-size: 20px;
+      font-size: min(10px,4wv);
 	  text-align: left;
 	  white-space: nowrap;
     }
     
     header p {
       margin: 0;
-      font-size: 18px;
     }
 	
 	
@@ -133,16 +150,15 @@ nav ul li {
 
 /* Highlighted section styles */
     .highlight {
-	  height: max(120px, 20vh); /* set container height to 20% of viewport height */
 	  display: flex; /* use flexbox layout */
 	  flex-direction: column; /* stack the boxes vertically */
 	  justify-content: center; /* distribute the boxes evenly */
-	  background-color: #99BBEE;
-	  color: black;
+	  background-color: white;
+	  font-weight: bold;
+	  color: #6699cc;
 	  padding: 20px;
 	  text-align: center;
 	  margin-top: 20px;
-	  font-size: min(5vw,30px);
 	  cursor: pointer;
 	  }
     
@@ -153,4 +169,7 @@ nav ul li {
 	#primo {
 		cursor: default;
 		max-width: 70%;
+		background-color: white; 
+		border: 10px solid white;
+		color: #6C8EBF;
 	}

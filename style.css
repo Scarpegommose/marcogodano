@@ -112,3 +112,11 @@
   .highlight {
       align-items: center;
   }
+	
+  .highlight p {
+      align-items: center;
+  }
+
+  .highlight p a {
+      align-items: center;
+  }

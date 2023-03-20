@@ -118,9 +118,10 @@
       .grid-item h2 {
         margin-top: 10px;
         margin-bottom: 10px;
-		flex: 1;
-		font-size: inherit;
-		white-space: nowrap;
+	flex: 1;
+	font-size: inherit;
+	white-space: nowrap;
+        color: white;
       }
 	  .grid-item:hover {
 		background-color: #6C8EBF;
@@ -144,7 +145,7 @@
 		cursor: pointer;
 		font-weight: bold;
 		text-align: center;
-		background-color: #99BBEE;
+		background-color: white;
 		color: #e4f0f5; 
 		}
 
@@ -163,7 +164,7 @@
 	  }
     
 	.hover-div:hover {
-		background-color: #6C8EBF;
+		background-color: #c5d6f0;
 	}
 	
 	#primo {
